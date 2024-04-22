@@ -11,7 +11,7 @@ class MenuViewTest(TestCase):
         self.menu_item2 = models.MenuItem.objects.create(title="Pizza", price=12.99, inventory=40)
 
     def test_getall(self):
-        response = self.client.get('/restaurant/menu/items/')
+        response = self.client.get('/restaurant/menu/')
         menu_items = models.MenuItem.objects.all()
         serializer = serializers.MenuSerializer(menu_items, many=True)
         self.assertEqual(response.data, serializer.data)
