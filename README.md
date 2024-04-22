@@ -1,20 +1,23 @@
-For the static html content: /restaurant
+For the static html content: 
+
+           /restaurant
 
 
+For menu : 
 
-For menu : /restaurant/menu
-
+           /restaurant/menu
            /restaurant/menu/<int>
+
            
+For booking: 
 
-
-For booking: /restaurant/booking/tables
+           /restaurant/booking/tables
+           
 booking requires authentication
 
 
+For User registration:
 
-For User registration: /auth/token/login
-
-                       /auth/token/logout
-                       
-                       /restaurant/api-token-auth
+                      /auth/token/login
+                      /auth/token/logout 
+                      /restaurant/api-token-auth
