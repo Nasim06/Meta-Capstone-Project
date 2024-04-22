@@ -10,7 +10,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 class MenuSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Menu
+        model = MenuItem
         fields = "__all__"
 
 

@@ -11,12 +11,12 @@ def index(request):
 
 
 class MenuItemsView(generics.ListCreateAPIView):
-    queryset = Menu.objects.all()
+    queryset = MenuItem.objects.all()
     serializer_class = MenuSerializer
 
 
-class SingleMenuItemView(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
-    queryset = Menu
+class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = MenuItem.objects.all()
     serializer_class = MenuSerializer
 
 
