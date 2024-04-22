@@ -18,6 +18,6 @@ booking requires authentication
 
 For User registration:
 
-                      /auth/token/login
-                      /auth/token/logout 
-                      /restaurant/api-token-auth
+           /auth/token/login
+           /auth/token/logout 
+           /restaurant/api-token-auth
